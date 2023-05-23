@@ -3,7 +3,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import BannerCard from '../Home/BannerCard';
+import BannerCard from './BannerCard';
 import BannerImage1 from '../../assets/home/banner01.jpg'
 import MobileBannerImage1 from '../../assets/home/banner_m1.jpg'
 
@@ -116,25 +116,6 @@ export default function Home() {
             </div>
             {/* Our Status Section End */}
 
-            {/* Testimonial Section Start */}
-            <section className="client-area ptb-100">
-                <div className="container">
-                    <div className="section-title text-center">
-                        <span className="sub-title">TESTIMONIAL</span>
-                        <h2>What our clients say</h2>
-                    </div>
-                    <OwlCarousel {...testimonialCarouselOptions} className='owl-theme owl-carousel'>
-                        <TestmonialCard image={ClientImage1} name={"Jeffrey E. Nicolas"} designation={"CEO, ABC Inc."} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
-                        <TestmonialCard image={ClientImage2} name={"Gloria Williams"} designation={"Manager"} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
-                        <TestmonialCard image={ClientImage1} name={"Jeffrey E. Nicolas"} designation={"CEO, ABC Inc."} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
-                        <TestmonialCard image={ClientImage2} name={"Gloria Williams"} designation={"Manager"} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
-                        <TestmonialCard image={ClientImage1} name={"Jeffrey E. Nicolas"} designation={"CEO, ABC Inc."} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
-                        <TestmonialCard image={ClientImage2} name={"Gloria Williams"} designation={"Manager"} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
-                    </OwlCarousel>
-                </div>
-            </section>
-            {/* Testimonial Section End */}
-
             {/* About Section Start */}
             <div className="about-area" style={{ backgroundImage: `url(${AboutBackgroundImage})` }}>
                 <div className="container">
@@ -184,6 +165,25 @@ export default function Home() {
                 </div>
             </div>
             {/* Client Logo Section End */}
+
+            {/* Testimonial Section Start */}
+            <section className="client-area ptb-100">
+                <div className="container">
+                    <div className="section-title text-center">
+                        <span className="sub-title">TESTIMONIAL</span>
+                        <h2>What our clients say</h2>
+                    </div>
+                    <OwlCarousel {...testimonialCarouselOptions} className='owl-theme owl-carousel'>
+                        <TestmonialCard image={ClientImage1} name={"Jeffrey E. Nicolas"} designation={"CEO, ABC Inc."} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
+                        <TestmonialCard image={ClientImage2} name={"Gloria Williams"} designation={"Manager"} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
+                        <TestmonialCard image={ClientImage1} name={"Jeffrey E. Nicolas"} designation={"CEO, ABC Inc."} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
+                        <TestmonialCard image={ClientImage2} name={"Gloria Williams"} designation={"Manager"} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
+                        <TestmonialCard image={ClientImage1} name={"Jeffrey E. Nicolas"} designation={"CEO, ABC Inc."} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
+                        <TestmonialCard image={ClientImage2} name={"Gloria Williams"} designation={"Manager"} message={"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.”"} />
+                    </OwlCarousel>
+                </div>
+            </section>
+            {/* Testimonial Section End */}
 
         </>
     )
