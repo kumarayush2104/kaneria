@@ -29,6 +29,7 @@ export default function ContactUs() {
             </div>
             {/* Our Office Section End */}
 
+            {/* Contact Us Form Section Start */}
             <section className="contact-area gray_bg">
                 <div className="container-fluid">
                     <div className="row">
@@ -95,6 +96,7 @@ export default function ContactUs() {
                     </div>
                 </div>
             </section>
+            {/* Contact Us form Section End  */}
         </>
     )
 }
