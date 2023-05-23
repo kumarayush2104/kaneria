@@ -7,8 +7,25 @@ import Gallery from './components/gallery/Gallery';
 import Career from './components/career/Career';
 
 function App() {
+
+  window.$(function ($) {
+    $(window).scroll(function () {
+      var btn = $('#toTop');
+      if ($(window).scrollTop() > 300) {
+        btn.attr("style", "display: block !important");
+      } else {
+        btn.attr("style", "display: none !important");
+      }
+    })
+
+    $('#toTop').click(function () {
+      $('html, body').animate({ scrollTop: '0px' }, 300);
+    });
+  });
+
   return (
     <>
+      <div id="toTop" className="back-to-top-btn"><i className="bx bx-up-arrow-alt"></i></div>
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Home />} />
