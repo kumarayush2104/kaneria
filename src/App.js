@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import ContactUs from './components/contact-us/ContactUs';
 import Gallery from './components/gallery/Gallery';
 import Career from './components/career/Career';
+import ProductDetails from './components/product-details/ProductDetails';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route exact path='/Contact-us' element={<ContactUs />} />
         <Route exact path='/Gallery' element={<Gallery />} />
         <Route exact path='/Career' element={<Career />} />
+        <Route exact path='/Product-details' element={ <ProductDetails /> } />
       </Routes>
       <Footer />
     </>
