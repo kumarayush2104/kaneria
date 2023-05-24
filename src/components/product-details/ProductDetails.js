@@ -17,12 +17,6 @@ import ProductSpecsCard from './ProductSpecsCard'
 import WarningIcon from '../../assets/product-details/Warning.png'
 
 export default function ProductDetails() {
-
-    const setActivetab = (e) => {
-        window.$('.nav-btn').removeClass('active');
-        e.target.className = "nav-btn active"
-    }
-
     return (
         <>
             <div className="header_space"></div>
@@ -32,10 +26,10 @@ export default function ProductDetails() {
                 <div id="scroller-anchor"></div>
                 <div id="nav">
                     <ul className="clearfix">
-                        <Link className="nav-btn active" offset={-150} to="row1" onClick={(e) => setActivetab(e)}>Product Description</Link>
-                        <Link className="nav-btn" offset={-150} to="row2" onClick={(e) => setActivetab(e)}>Features & Benefits</Link>
-                        <Link className="nav-btn" offset={-150} to="row3" onClick={(e) => setActivetab(e)}>Technical Specifications</Link>
-                        <Link className="nav-btn" offset={-150} to="row4" onClick={(e) => setActivetab(e)}>Warning</Link>
+                        <Link activeClass="active" className="nav-btn" offset={-150} to="row1" spy={true} >Product Description</Link>
+                        <Link activeClass="active" className="nav-btn" offset={-150} to="row2" spy={true} >Features & Benefits</Link>
+                        <Link activeClass="active" className="nav-btn" offset={-150} to="row3" spy={true} >Technical Specifications</Link>
+                        <Link activeClass="active" className="nav-btn" offset={-150} to="row4" spy={true} >Warning</Link>
                     </ul>
                 </div>
             </div>
