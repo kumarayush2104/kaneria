@@ -7,6 +7,7 @@ import Gallery from './components/gallery/Gallery';
 import Career from './components/career/Career';
 import ProductDetails from './components/product-details/ProductDetails';
 import BecomeVendor from './components/become-vendor/BecomeVendor';
+import AboutUs from './components/about-us/AboutUs';
 
 function App() {
 
@@ -34,8 +35,15 @@ function App() {
         <Route exact path='/Contact-us' element={<ContactUs />} />
         <Route exact path='/Gallery' element={<Gallery />} />
         <Route exact path='/Career' element={<Career />} />
-        <Route exact path='/Product-details' element={ <ProductDetails /> } />
-        <Route exact path='/Become-vendor' element={ <BecomeVendor /> } />
+        <Route exact path='/Product-details' element={<ProductDetails />} />
+        <Route exact path='/Become-vendor' element={<BecomeVendor />} />
+        <Route exact path='/About-us' element={<AboutUs />} >
+          <Route exact path='/About-us/Profile' element={<AboutUs />} />
+          <Route exact path='/About-us/CSR' element={<AboutUs />} />
+          <Route exact path='/About-us/Our-Team' element={<AboutUs />} />
+          <Route exact path='/About-us/Sustainable-development' element={<AboutUs />} />
+          <Route exact path='/About-us/Plant' element={<AboutUs />} />
+        </Route>
       </Routes>
       <Footer />
     </>

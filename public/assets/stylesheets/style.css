@@ -3894,3 +3894,25 @@ footer.sticky-footer {
     display: block;
     width: auto !important;
 }
+
+.ol_list {
+    margin-left: -8px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: justify;
+    color: #000;
+}
+
+.page-tab-area ul li button {
+    padding: 25px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.page-tab-area ul li button:hover {
+    display: block;
+    list-style: none;
+    color: #fff;
+    border-bottom: 5px solid #A5BF1D;
+}
