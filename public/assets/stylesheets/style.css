@@ -1564,7 +1564,7 @@ ul.mr-20 {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/loader.gif);
+    background-image: url(../loader.gif);
     background-repeat: no-repeat;
 }
 
@@ -3809,9 +3809,6 @@ footer.sticky-footer {
     background-color: #f6f6f6;
 }
 
-
-
-
 /*fix-left-button--------------------------------------------------*/
 
 .sidebar_fixed .sticky {
@@ -3915,4 +3912,15 @@ footer.sticky-footer {
     list-style: none;
     color: #fff;
     border-bottom: 5px solid #A5BF1D;
+}
+
+.client-page-area {
+    padding-top: 45px;
+    background-color: #f6f6f6;
+}
+
+.client-item {
+    background-color: #fff;
+    padding: 25px;
+    margin: 15px;
 }
