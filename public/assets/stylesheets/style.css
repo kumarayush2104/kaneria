@@ -3901,7 +3901,7 @@ footer.sticky-footer {
 }
 
 .page-tab-area ul li button {
-    padding: 25px;
+    padding: 25px 20px;
     border: none;
     background-color: transparent;
     color: white;
@@ -3915,12 +3915,22 @@ footer.sticky-footer {
 }
 
 .client-page-area {
-    padding-top: 45px;
+    padding: 45px 0px;
     background-color: #f6f6f6;
 }
 
 .client-item {
     background-color: #fff;
-    padding: 25px;
+    padding: 15px;
     margin: 15px;
+}
+
+.client-logo img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .side-nav {
+        display: none;
+    }
 }

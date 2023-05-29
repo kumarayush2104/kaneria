@@ -1,36 +1,35 @@
+// Libraries
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
+// Components
 import BannerCard from './BannerCard';
+import ProductCard from './ProductCard';
+import TestmonialCard from './TestimonialCard';
+import CounterCard from './CounterCard';
+import ClientLogoCard from './ClientLogoCard'
+import AboutSectionTab from './AboutSectionTab';
+import AboutSectionContent from './AboutSectionContent';
+
+// Media
 import BannerImage1 from '../../assets/home/banner01.jpg'
 import MobileBannerImage1 from '../../assets/home/banner_m1.jpg'
-
-import ProductCard from './ProductCard';
-import Product1Image from '../../assets/home/product01.jpg';
-import Product2Image from '../../assets/home/product02.jpg';
-import Product3Image from '../../assets/home/product03.jpg';
-import Product4Image from '../../assets/home/product04.jpg';
-import Product5Image from '../../assets/home/product05.jpg';
-
-import TestmonialCard from './TestimonialCard';
+import Product1Image from '../../assets/home/product01.jpg'
+import Product2Image from '../../assets/home/product02.jpg'
+import Product3Image from '../../assets/home/product03.jpg'
+import Product4Image from '../../assets/home/product04.jpg'
+import Product5Image from '../../assets/home/product05.jpg'
 import ClientImage1 from '../../assets/home/client1.png'
 import ClientImage2 from '../../assets/home/client2.png'
-
-import CounterCard from './CounterCard';
-
-import ClientLogoCard from './ClientLogoCard'
 import ClientLogo1 from '../../assets/home/logo1.png'
 import ClientLogo2 from '../../assets/home/logo2.png'
 import ClientLogo3 from '../../assets/home/logo3.png'
 import ClientLogo4 from '../../assets/home/logo4.png'
 import ClientLogo5 from '../../assets/home/logo5.png'
 import ClientLogo6 from '../../assets/home/logo6.png'
-
 import AboutBackgroundImage from '../../assets/home/about_bg.jpg'
-import AboutSectionTab from './AboutSectionTab';
-import AboutSectionContent from './AboutSectionContent';
 
 export default function Home() {
 

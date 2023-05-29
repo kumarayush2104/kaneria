@@ -1,9 +1,14 @@
+// Library
 import React, { useEffect } from 'react'
+
+// Components
 import OurOfficeCard from './OurOfficeCard'
 
 export default function ContactUs() {
 
     useEffect(() => {
+
+        // Initializing Form Validator Module
         window.$((function ($) {
             $("#contactForm").validator().on("submit", function (event) { if (event.isDefaultPrevented()) { formError(); } else { event.preventDefault(); submitForm(); } }); function submitForm() { var name = $("#name").val(); var email = $("#email").val(); var msg_subject = $("#msg_subject").val(); var phone_number = $("#phone_number").val(); var message = $("#message").val(); $.ajax({ type: "POST", url: "assets/php/form-process.php", data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message, success: function (text) { if (text === "success") { formSuccess(); } else { formError(); alert(text); } } }); }
             function formSuccess() { $("#contactForm")[0].reset(); alert("Message Submitted!") }
@@ -14,6 +19,7 @@ export default function ContactUs() {
     return (
         <>
             <div className="header_space"></div>
+
             {/* Our Office Section Start */}
             <div className="container">
                 <div className="contact-area two contact-details">

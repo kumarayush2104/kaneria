@@ -51,11 +51,11 @@ function App() {
   return (
     <>
       {/* Loading Animation Section Start */}
-      <div class="loader">
-        <div class="d-table">
-          <div class="d-table-cell">
-            <div class="loading-wrapper">
-              <div class="loading"></div>
+      <div className="loader">
+        <div className="d-table">
+          <div className="d-table-cell">
+            <div className="loading-wrapper">
+              <div className="loading"></div>
             </div>
           </div>
         </div>

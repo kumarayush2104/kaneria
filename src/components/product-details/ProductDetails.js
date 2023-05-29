@@ -1,7 +1,14 @@
+// Library
 import React from 'react'
 import { Link } from 'react-scroll'
-import BannerImage from '../../assets/product-details/product_banner.jpg'
+
+// Components
 import ProductDescriptionCard from './ProductDescriptionCard'
+import ProductFeatureCard from './ProductFeatureCard'
+import ProductSpecsCard from './ProductSpecsCard'
+
+// Media
+import BannerImage from '../../assets/product-details/product_banner.jpg'
 import BenefitImage1 from '../../assets/product-details/benefit01.png'
 import BenefitImage2 from '../../assets/product-details/benefit02.png'
 import BenefitImage3 from '../../assets/product-details/benefit03.png'
@@ -12,8 +19,6 @@ import BenefitImage7 from '../../assets/product-details/benefit07.png'
 import BenefitImage8 from '../../assets/product-details/benefit08.png'
 import BenefitImage9 from '../../assets/product-details/benefit09.png'
 import BenefitImage10 from '../../assets/product-details/benefit10.png'
-import ProductFeatureCard from './ProductFeatureCard'
-import ProductSpecsCard from './ProductSpecsCard'
 import WarningIcon from '../../assets/product-details/Warning.png'
 
 export default function ProductDetails() {
